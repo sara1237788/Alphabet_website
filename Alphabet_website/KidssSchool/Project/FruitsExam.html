@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>	
+<html>
+<head>
+<link rel="stylesheet"
+      href="style2.css"/>
+</head>
+<body class="examPage">
+<form method="post" action="show-data.php" enctype="multipart/form-data" onsubmit="return confirm('Are you sure you want to submit this form ?');"> 
+<fieldset class="field">
+<h2>listen and choose what is this fruit? </h2>
+<audio  src="audios/orange.mp3" controls></audio>
+<br>
+<input type="radio" name="fruit" id="Orange" value="" />
+<label for="Orange"></label>
+<br>
+<img src="images/orange.jpg"   width="150" height="120">
+<br>
+<input type="radio" name="fruit" id="graps" value="" />
+<label for="graps"></label>
+<br>
+<img  src="images/graps.jpg" width="150" height="120"> 
+<br>
+<input type="radio" name="fruit" id="kiwi" value="" />
+<label for="kiwi"></label>
+<br>
+<img  src="images/kiwi.jpg"  width="150" height="120">
+<br>
+</fieldset>
+<fieldset class="field">
+<h2>Is this an apple? </h2>
+<img src="images/strawberry - Copy.jpg" width="260" height="230"> 
+<br>
+
+<input type="radio" name="t&f" id="true" value="" />
+<label for="true"></label>
+<img src="images/true.jpg" width="40" height="30">
+<br>
+
+<br>
+<input type="radio" name="t&f" id="false" value="" />
+<label for="false"></label>
+<img src="images/false.jpg" width="40" height="30">
+<br>
+</fieldset>
+<fieldset class="field">
+<h2>choose the correct audio for this picture? </h2>
+<img  src="images/banana.jpg" width="260" height="230">
+<br>
+<input type="radio" name="fruitt" id="kiwi" value="" />
+<label for="kiwi"></label>
+<br>
+<audio  src="audios/kiwi.mp3" controls></audio>
+<br>
+<input type="radio" name="fruitt" id="banana" value="" />
+<label for="banana"></label>
+<br>
+<audio src="audios/banana.mp3" controls></audio>
+<br>
+</fieldset>
+
+<button class="submit" onsubmit="myFunction()">submit</button>
+
+<script>
+function validate(form) {
+/*if not valid or you want to cansel the submition it will turn back to the form*/
+if(!valid) {
+        return false;
+    }
+	
+	/*if you press ok the form will be sent  */
+	else {
+        return confirm('Are you sure you want to submit this form ?');
+    }
+	</script>
+<form onsubmit="return validate(this);">
+</form>
+</body>
+</html>

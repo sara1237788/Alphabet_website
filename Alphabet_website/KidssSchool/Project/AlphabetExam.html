@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet"
+      href="style2.css"/>
+</head>
+<body class="examPage">
+<form method="post" action="show-data.php" enctype="multipart/form-data" onsubmit="return confirm('Are you sure you want to submit this form ?');" > 
+
+<fieldset class="field">
+<h2>What is this letter? </h2>
+<img src="images/R.png" width="300" height="350">
+<br>
+<input type="radio" name="letter" id="letterB" value="B" />
+<label for="letterB">Letter B</label>
+<br>
+<input type="radio" name="letter" id="letterR" value="R" />
+<label for="letterR">Letter R</label>
+<br>
+<input type="radio" name="letter" id="letterK" value="K" />
+<label for="letterK">Letter K</label>
+</fieldset>
+
+<fieldset class="field">
+<h2>Example of letter B is Bear? </h2>
+<img src="images/letterB.jpg" width="300" height="350">
+<br>
+<input type="radio" name="t&f" id="true" value="" />
+<label for="true"></label>
+<img src="images/true.jpg" width="40" height="30">
+<br>
+<input type="radio" name="t&f" id="false" value="" />
+<label for="false"></label>
+<img src="images/false.jpg" width="40" height="30">
+</fieldset>
+
+<fieldset class="field">
+<h2>Write the firts letter in this photo<h2>
+<br>
+<img src="images/dog.jpg" width="300" height="350">
+<br>
+<label for="lettarD">write your answer:</label>
+<input type="text" name="lettard" id="lettarD" required />
+</fieldset>
+
+<fieldset class="field">
+<h2>Choose the words that start with letter L </h2>
+<input type="checkbox" name="letterl" id="letterL" value="Lamp" />
+<label for="letterL">Lamp</label>
+<br>
+<img src="images/lamp.jpg" width="100" height="150">
+<br>
+<input type="checkbox" name="letters" id="letterS" value="Sun" />
+<label for="letterS">Sun</label>
+<br>
+<img src="images/sun.jpg" width="100" height="150">
+<br>
+<input type="checkbox" name="lettel" id="letteL" value="Lion" />
+<label for="letteL">Lion</label>
+<br>
+<img src="images/lion.jpg" width="100" height="150">
+<br>
+<input type="checkbox" name="letterj" id="letterJ" value="Juice" />
+<label for="letterJ">Juice</label>
+<br>
+<img src="images/juice.jpg" width="100" height="150">
+</fieldset>
+<button class="submit" onsubmit="myFunction()">submit</button>
+
+<script>
+function validate(form) {
+/*if not valid or you want to cansel the submition it will turn back to the form*/
+if(!valid) {
+        return false;
+    }
+	/
+	/*if you press ok the form will be sent  */
+	else {
+        return confirm('Are you sure you want to submit this form ?');
+    }
+	</script>
+<form onsubmit="return validate(this);">
+</form>
+
+</body>
+</html>

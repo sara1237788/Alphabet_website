@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+	<title> Kids School </title>
+	<link rel="stylesheet" href="style.css"/>
+</head>
+
+   <body> 
+     <div class="sing_in">
+    <h1>SING IN</h1>
+	<p>
+	  <form action="List to choose the lesson.html">
+	<div class="file span">
+      <input type="text" name="username" id="username" required placeholder="Enter your Username "/>
+        </div>
+	    <br>
+		 <div class="file span">
+      <input type="text" name="age" id="age" required="required" required placeholder="Enter your Age "/>
+               </div>
+	 <br>
+	 <div class="file span">            
+      <select id="City" name="City">
+	   <option value="city">Choose your city</option>
+       <option value="Riyadh">Riyadh</option>
+       <option value="Makkah">Makkah</option>
+       <option value="Madeena">Madeena</option>
+       <option value="Jeddah">Jeddah</option>
+       <option value="Dhahran">Dhahran</option>
+       <option value="Jubail">Jubail </option>
+       <option value="Yanbu">Yanbu </option>
+       <option value="Jamom">Jamom</option>
+       <option value="Khuber">Khuber</option>
+      </select> 
+	     </div>
+	     <br>
+	  <div class="file span">             
+	  <input type="email" name="email" id="email" required="required" placeholder="Enter your Email "/>
+	 </div>
+	 <br>
+		  <div class="file span">
+		  <span class="fa fa-lock"></span>
+      <input type="password" class="pass-key" id="Pas-word" placeholder="Enter your Password " required name="serve_r"></input>
+	   <span class="show">SHOW</span>
+	   </div>
+<br>
+	  
+		<div class="file span"> 
+ 	<input type="submit" class="submit" value="Create an account">
+ 
+	     </div>
+		 </form>
+	</p>
+	
+  
+  <br>
+		 <div class="file span">                
+	<input type="button" class="Button" value="Log in your account" onClick="myFunction()">
+     <script>
+       function myFunction(){
+         window.location.href="login.html";
+       }
+     </script>
+	  </div>
+   </div>
+  
+  <script>
+         const pass_field = document.querySelector('.pass-key');
+         const showBtn = document.querySelector('.show');
+         showBtn.addEventListener('click', function(){
+          if(pass_field.type === "password"){
+            pass_field.type = "text";
+            showBtn.textContent = "HIDE";
+            showBtn.style.color = "#3498db";
+          }else{
+            pass_field.type = "password";
+            showBtn.textContent = "SHOW";
+            showBtn.style.color = "#222";
+          }
+         });
+      </script>
+  
+  
+  
+   
+   </body>
+
+
+
+
+
+
+
+</html>

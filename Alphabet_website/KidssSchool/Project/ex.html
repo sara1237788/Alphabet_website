@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet"
+      href="style2.css"/>
+</head>
+<body class="examPage">
+<form method="post" action="show-data.php" enctype="multipart/form-data" onsubmit="return confirm('Are you sure you want to submit this form ?');"> 
+
+<fieldset class="field">
+<h2>Who is this ? </h2>
+<img src="images/s.jpg" width="300" height="350">
+<br>
+<input type="radio" name="f" id="Brother" value="A" />
+<label for="Brother">Brother</label>
+<br>
+<input type="radio" name="f" id="Sister" value="B" />
+<label for="Sister">Sister</label>
+<br>
+<input type="radio" name="f" id="Father" value="C" />
+<label for="Father">Father</label>
+</fieldset>
+
+<fieldset class="field">
+<h2>Is she a mother? </h2>
+<img src="images/mo.jpg" width="300" height="350">
+<br>
+<input type="radio" name="t&f" id="true" value="" />
+<label for="true"></label>
+<img src="images/true.jpg" width="40" height="30">
+<br>
+<input type="radio" name="t&f" id="false" value="" />
+<label for="false"></label>
+<img src="images/false.jpg" width="40" height="30">
+</fieldset>
+
+<fieldset class="field">
+<h2>Write who is this in the photo<h2>
+<br>
+<img src="images/f.jpg" width="300" height="350">
+<br>
+<label for="lettarD">write your answer:</label>
+<input type="text" name="lettard" id="lettarD" required />
+</fieldset>
+
+<button class="submit" onsubmit="myFunction()">submit</button>
+
+<script>
+function validate(form) {
+/*if not valid or you want to cansel the submition it will turn back to the form*/
+if(!valid) {
+        return false;
+    }
+	/
+	/*if you press ok the form will be sent  */
+	else {
+        return confirm('Are you sure you want to submit this form ?');
+    }
+	</script>
+<form onsubmit="return validate(this);">
+</form>
+</body>
+</html>
